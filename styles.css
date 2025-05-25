@@ -365,6 +365,25 @@ footer{
     opacity: 1;
     transform: translateX(-50%) translateY(-10px);
 }
+#footerBtn {
+    position: fixed;
+    bottom: 30px;
+    right: 25px;
+    z-index: 999;
+    padding: 10px 15px;
+    font-size: 20px;
+    background-color: #333;
+    color: #fff;
+    border: none;
+    border-radius: 50%;
+    cursor: pointer;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.3);
+    transition: background-color 0.3s;
+}
+
+#footerBtn:hover {
+    background-color: #555;
+}
 
 
 

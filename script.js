@@ -52,6 +52,10 @@ function showToast(message) {
     }, 3000);
 }
 
+function scrollToFooter() {
+    document.getElementById("footer").scrollIntoView({ behavior: "smooth" });
+}
+
 
 window.addEventListener('scroll',()=>{
     const navbar=document.querySelector('.navbar');
