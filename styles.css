@@ -384,6 +384,33 @@ footer{
 #footerBtn:hover {
     background-color: #555;
 }
+/* Hide hamburger by default */
+.hamburger {
+  display: none;
+  font-size: 28px;
+  cursor: pointer;
+  color: white; /* adjust color */
+}
+
+/* For small screens */
+@media (max-width: 768px) {
+  .nav-link {
+    display: none;
+    flex-direction: column;
+    background-color: #333; /* or your navbar bg color */
+    position: absolute;
+    top: 60px; /* adjust depending on navbar height */
+    right: 0;
+    width: 100%;
+    z-index: 999;
+  }
+  .nav-link.active {
+    display: flex;
+  }
+  .hamburger {
+    display: block;
+  }
+}
 
 
 

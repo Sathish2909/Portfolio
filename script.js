@@ -57,6 +57,16 @@ function scrollToFooter() {
 }
 
 
+
+
+const hamburger = document.getElementById('hamburger');
+const navLinks = document.getElementById('nav-links');
+
+hamburger.addEventListener('click', () => {
+  navLinks.classList.toggle('active');
+});
+
+
 window.addEventListener('scroll',()=>{
     const navbar=document.querySelector('.navbar');
     window.scrollY>50?
