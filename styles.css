@@ -411,6 +411,20 @@ footer{
     display: block;
   }
 }
+.nav-link {
+  display: none; /* Hide menu by default on small screens */
+}
+
+.nav-link.active {
+  display: block; /* Show menu when active */
+}
+
+/* Optional: style hamburger */
+.hamburger {
+  cursor: pointer;
+  font-size: 1.5rem;
+  display: block; /* make sure it's visible */
+}
 
 
 

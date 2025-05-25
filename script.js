@@ -59,17 +59,20 @@ function scrollToFooter() {
 
 
 
-const hamburger = document.getElementById('hamburger');
-const navLinks = document.getElementById('nav-link');
 
-hamburger.addEventListener('click', () => {
-  navLinks.classList.toggle('active');
-});
 
 
 window.addEventListener('scroll',()=>{
     const navbar=document.querySelector('.navbar');
     window.scrollY>50?
     navbar.computedStyleMap.backgroundColor='rgba(10,10,10,0.98)':navbar.computedStyleMap.backgroundColor='rgba(10,10,10,0.95)';
+});
+
+
+const hamburger = document.getElementById('hamburger');
+const navLink = document.getElementById('nav-link');
+
+hamburger.addEventListener('click', () => {
+  navLink.classList.toggle('active');
 });
 
